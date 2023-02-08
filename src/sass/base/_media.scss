@@ -1,0 +1,112 @@
+
+@media (max-width: 991.9px){
+    .container{
+        width: 720px;
+    }
+    .advantages{
+        &__wrapper{
+            width: 680px;
+        }
+        &__items{
+            width: 200px;
+        }
+    }
+}
+@media (max-width: 767.9px){
+    .container{
+        width: 550px;
+    }
+    .header{
+        &__official{
+            display: none;
+        }
+    }
+    .promo{
+        &__link{
+            display: none;
+        }
+        &__wrapper{
+            align-items: center;
+        }
+    }
+    .button{
+        &_main{
+            width: 300px;
+            height: 60px;
+            margin: 45px auto 0 auto;
+        }
+    }
+    .advantages{
+        &__wrapper{
+            max-width: 100%;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        &__items{
+            width: 400px;
+            margin-top: 20px;
+        }
+    }
+    .title{
+        &_left{
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    .consultation{
+        &__descr{
+            text-align: center;
+            max-width: 100%;
+        }
+    }   
+    .feed-form{
+        margin: 30px auto 0 auto;
+    }
+}
+@media (max-width: 575.9px){
+    .container{
+        width: 100%;
+    }
+    .header{
+        justify-content: center;
+        &__contacts{
+            display: none;
+        }
+    }
+    .promo{
+        padding-bottom: 40px;
+        min-height: 550px;
+        &__wrapper{
+            margin-top: 20px;
+        }
+        &__icons{
+            width: 100%;
+            margin-top: 30px;
+        }
+        &__header{
+            text-align: center;
+            line-height: 1.1;
+            font-size: 38px;
+        }
+        &__subheader{
+            text-align: center;
+            line-height: 1.1;
+            font-size: 20px;
+        }
+    }
+    .advantages{
+        padding: 40px 0 40px 0;
+        &__items{
+            width: 90%;
+        }
+    }
+    .consultation{
+    min-height: 550px;
+    padding: 40px 0;
+    &__descr{
+        margin-top: 40px;
+    }
+    }
+
+}
