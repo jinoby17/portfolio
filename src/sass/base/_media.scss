@@ -23,6 +23,11 @@
             width: 200px;
         }
     }
+    .feed{
+        &__text{
+            width: 465px;
+        }
+    }    
 }
 @media (max-width: 767.9px){
     .container{
@@ -86,19 +91,40 @@
         display: none;
     }
     .catalog{
-        &__content{
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            &_no-top{
-                margin-top: 0;
-            }
+        &__tab{
+            width: 170px;
         }
-        &-item{
-            margin: 10px 0;
-            width: 500px;
+        &__content{
+            justify-content: center;
         }
     }
+    .feed{
+        &__line{
+            display: block;
+            margin-top: 20px;
+        }
+        margin-bottom: 40px;
+        &__item{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0px;
+        }
+        &__text{
+            width: 90%;
+        }
+        &__subtitle{
+            text-align: center;
+            margin-top: 10px;
+        }
+        &__count{
+            text-align: center;
+            margin-top: 10px;
+        }
+        &__descr{
+            text-align: center;
+            margin-top: 10px;
+        }
+    }    
 }
 @media (max-width: 575.9px){
     .container{
@@ -149,28 +175,23 @@
     }
     .catalog{
         padding: 40px 0;
-
         &__tabs{
-            margin-top: 20px;
             flex-direction: column;
-            align-items: center;
-            padding-left: 0;
+            align-items:center;
+            margin-top: 30px;
         }
         &__tab{
-            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 300px;
             transform: skewX(0deg);
             div{
                 transform: skewX(0deg);
             }
         }
         &__content{
-            margin-top: 40px;
-            &_no-top{
-                margin-top: 0;
-            }
+            margin-top: 30px;
         }
         &-item{
-            margin: 10px 0;
             width: 300px;
         }
     }
