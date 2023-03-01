@@ -134,6 +134,9 @@
             transition: 0.5s all;
             padding-left: 19px;
             list-style-type: none;
+            ul{
+                padding-left: 0;
+            }
             &_active{
                 transform: translateX(-100%);
                 margin-left: 0px;  

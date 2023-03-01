@@ -15,6 +15,36 @@
     &__icon{
         display: block;
         margin: 0 auto;
+        &_animated{
+            animation-name: heartbeat;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover{
+                animation-play-state: paused;
+                cursor: pointer;
+            }
+        }
+        &_shoego{
+            animation-name: shoego;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover{
+                animation-play-state: paused;
+                cursor: pointer;
+            }
+        }
+        &_cupup{
+            animation-name: cupup;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover{
+                animation-play-state: paused;
+                cursor: pointer;
+            }
+        }
     }
     &__subtitle{
         font-size: 18px;
