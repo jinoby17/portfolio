@@ -1,28 +1,31 @@
-.about-me{
+.about{
     min-height: 840px;
     padding: 108px 0 118px 0;
     &__grid{
     display: grid;
-    width: 1040px;
-    height: 615px;
     grid-template-columns: 394px 570px;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: minmax(260px auto) minmax(270px, auto);
     gap: 40px 76px;
     }
     &__img{
         grid-column: 1 / 2;
         grid-row: 1 / 3;
+        width: 100%;
     }
     &__subgrid{
         display: grid;
         grid-template-columns: repeat(2, 260px);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, minmax(116px, auto));
         column-gap: 50px;
         row-gap: 20px;
+        grid-auto-rows: 1fr;
     }
     &__item{
-        padding-left: 60px;
         position: relative;
+        display: grid;
+        grid-template-columns: 40px 200px;
+        grid-template-rows: minmax(21px, auto) minmax(126px, auto);
+        column-gap: 20px;
     }
     &__descr{
         font-weight: 500;
@@ -40,14 +43,14 @@
         font-size: 12px;
     }
     &__icon{
-        position: absolute;
-        top: 15px;
-        left: 0;
+        position: relative;
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        padding: 15px 0 0 15px;
         @include before_circle;
-        img{
-            position: absolute;
-            left: 17px;
-            top: 18px;
+        &:before{
+            top: 0;
         }
+    
     }
 }
